@@ -1,0 +1,64 @@
+body {
+    padding: 10px;
+    margin: 0;
+
+    background-image: linear-gradient(to right, darkred, orange);
+    
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+/* Centralizando container*/
+    position: absolute;
+    top: 15%;
+    left: 25%;
+
+    width: 50%;
+    height: 50vh;
+    background-color: gray;
+
+    border: 1px solid black;
+}
+h2 {
+    text-align: center;
+}
+.array-box {
+    height: 20vh;
+    justify-content: center;
+
+
+    background-color: darkgray;
+    border-bottom: 1px solid black;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+}
+.array-box p {
+    font-size: 30px;
+}
+
+
+.input-box {
+    text-align: center; /* Okay, o text align deixou no centro */
+
+    height: 40vh;
+    justify-content: center;
+    margin: auto;
+
+
+    margin: auto;
+
+    background-color: gray;
+}
+button {
+    width: 150px;
+    height: 40px;
+    background-color: aliceblue;
+    
+}
+
+#array {
+    width: auto;
+    height: 100px;
+    border: 1px solid gray;
+    margin-bottom: 5px;
+}
