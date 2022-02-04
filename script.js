@@ -6,34 +6,23 @@ let inputEl = document.getElementById("input-el")
 let btnAdd = document.getElementById("btn-add")
 
 
-btnAdd.addEventListener('click', function(e) {
-    e.preventDefault()
-    
+btnAdd.addEventListener('click', function() {
+
     let inputValue = inputEl.value.trim()
-   
-    arr.push(inputValue)
+    let value 
 
-
-// Adiciona ou não as áspas
+// Adiciona ou não as áspas 
     if(isString(inputValue) == true) {
-        arrayEl.innerHTML += `"${arr}", `
+        value = `"${inputValue}"`
         console.log('String')
     } else {
-        arrayEl.innerHTML += `${arr}, `
+        value = `${inputValue}`
         console.log("not a string")
     }
-    arr = []
-    inputEl.value = ""
 
-
-  
-    // for(let a in arr) {
-    //     if (a == arr.length -1) {
-    //         arrayEl.innerHTML += arr[a]
-    //     } else {
-    //         arrayEl.innerHTML += arr[a] + ", "
-    //     }
-    // }
+    arr.push(value)
+    console.log(arr)
+    arrayEl.innerHTML = arr
 })
 
 
